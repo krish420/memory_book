@@ -1,0 +1,48 @@
+.navbar_main{
+        border-bottom: 1px solid #D8D8DE;
+}
+.navbar_leftbar{
+        display: flex;
+}
+.navbar_logo{
+        margin: 8px 10px 8px 16px;
+}
+.navbar_search{
+        height: 35px;
+        width: 190px;
+        padding-left: 30px;
+        border-radius: 25px;
+        border: 0px;
+        background-color: aliceblue;
+        font-size: 16px;
+        margin-top: 8px;
+}
+.navbar_midbar{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 90px;
+}
+.navbar_tabs{
+        width: 120px;
+        height: 45px;
+        
+}
+.navbar_tabs.active{
+        border-bottom: 3px solid cornflowerblue;
+}
+.navbar_righttab{
+        display: flex;
+        margin-left: 40px;
+}
+.navbar_rightimg{
+        margin-top: 10px;
+}
+.navbar_profileName{
+        margin-left: 5px;
+        margin-top: 20px;
+        font-weight: bold;
+}
+.navbar_notification{
+        width: 120px;
+        height: 45px;
+}

@@ -1,0 +1,36 @@
+.landing_main{
+        /* background-color: aliceblue; */
+        background-image: url(../../../images/background.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        
+}
+.landing_imgText{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border: 2px solid transparent;
+        -webkit-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+        -moz-box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+        box-shadow: -1px 8px 15px 0px rgba(0, 0, 0, 0.44);
+}
+.landing_imgText h1{
+        /* font-family: "Brush Script MT",cursive ; */
+        color: rgb(202, 236, 238);
+        /* font-size: 60px; */
+        font-weight: 300;
+        padding: 40px;
+
+}
+.landing_imgText h2{
+        /* font-family: "Brush Script MT",cursive ; */
+        color: rgb(242, 246, 178);
+        /* font-size: 60px; */
+        font-weight: bolder;
+        margin-left: 100px;
+       
+}
