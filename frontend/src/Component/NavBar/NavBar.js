@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Grid from '@mui/material/Grid';
 import sitLogo from '../../images/sitlogo.jpg'
 import './NavBar.css'
@@ -11,6 +11,16 @@ import { Avatar } from '@mui/material';
 // import NotificationsIcon from '@mui/icons-material/Notifications';
 
 export default function NavBar() {
+        const [prevActive, setPrevActive] = useState();
+        useEffect(()=>{
+                setPrevActive(document.querySelector('#Home'))
+        },[]);
+        const handleClick = event =>{
+                prevActive.classList.remove('active');
+                event.currentTarget.classList.add('active')
+                setPrevActive(event.currentTarget);
+                
+        }
         return (
                 <div>
                         <Grid container className='navbar_main'>
@@ -22,16 +32,16 @@ export default function NavBar() {
                                 </Grid>
                                 <Grid item xs={6}>
                                         <div className='navbar_midbar'>
-                                                <div className='navbar_tabs active'>
+                                                <div id='Home' className= 'navbar_tabs active' onClick={handleClick}>
                                                         <img src={home} alt='' height='35px' width='35px'/>
                                                 </div>
-                                                <div className='navbar_tabs'>
+                                                <div className= 'navbar_tabs '  onClick={handleClick}>
                                                         <img src={groups} alt='' height='35px' width='35px'/>
                                                 </div>
-                                                <div className='navbar_tabs'>
+                                                <div className= 'navbar_tabs ' onClick={handleClick}>
                                                         <img src={friends} alt='' height='35px' width='35px'/>
                                                 </div>
-                                                <div className='navbar_tabs'>
+                                                <div className='navbar_tabs '  onClick={handleClick}>
                                                         <img src={messenger} alt='' height='35px' width='35px'/>
                                                 </div>
                                         </div>
